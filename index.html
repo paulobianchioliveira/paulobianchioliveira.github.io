@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>teste Dialog - Animation - jquery</title>
+    <title>teste 123-Dialog - Animation - jquery</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -22,6 +22,18 @@
                 }
             });
 
+            var array = [{nome:"teste",cel:"11994856086"},{nome:"teste2",cel:"11994856086-2"}];
+
+            array.forEach(element => {
+                console.log(element.cel);
+            });
+
+            for (let index = 0; index < array.length; index++) {
+
+                const element = array[index];
+                
+            }
+
             $("#opener").on("click", function () {
                 $("#dialog").dialog("open");
             });
@@ -30,11 +42,12 @@
 </head>
 <body>
 
+    Resume:<br /><a href="cv/english.pdf">ENGLISH</a><br /><a href="cv/portugues.pdf">PORTUGUES</a>
     <div id="dialog" title="Basic dialog">
         <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
     </div>
 
-    <button id="opener">Open Dialog</button>
+    <!--<button id="opener">Open Dialog</button>-->
 
 </body>
 </html>
